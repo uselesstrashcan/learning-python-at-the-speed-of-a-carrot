@@ -1,0 +1,35 @@
+import random
+while True:
+    options = ["rock","paper","sissors"]
+    pca = random.choice(options)
+
+    ui = input("\nenter a choice-> rock,paper,sissors! ")
+    print(f"\npca = {pca},ui = {ui}")
+    x=0
+
+    if ui == pca:
+        print("its a tie")
+        x=1
+    if x!=1:
+        if ui == "rock":  
+            if pca == "paper":
+                print("lesgo i win paper wraps rock ")
+            else: 
+                print("you win rock>sissors")
+
+        if ui == "paper":
+            if pca == "sissor":
+                print("lmao i win i chose rock you chose paper")
+            else:
+                print("aidhwquhfeijiod you win paper wraps rock")
+
+        if ui == "sissors":
+            if pca == "rock":
+                print("i win bitch rock>sissor")
+            else:
+                print ("congrats sissor>paper ")
+    again="oo"            
+    again=input("type y if you wanna continue ")
+    if again.lower() != "y":
+        print("bye then")
+        break
